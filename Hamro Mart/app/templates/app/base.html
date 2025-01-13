@@ -92,16 +92,7 @@
                             <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
                             <li><a class="dropdown-item" href="{% url 'orders' %}">Orders</a></li>
                             {% comment %} <li><a class="dropdown-item" href="{% url 'password_change' %}">ChangePassword</a></li> {% endcomment %}
-                            <li><a class="dropdown-item" href="{% url 'logout' %}" 
-                              onclick="event.preventDefault(); 
-                                       document.getElementById('logout-form').submit();">
-                               Logout
-                           </a></li>
-                       
-                       <form id="logout-form" action="{% url 'logout' %}" method="POST" style="display: none;">
-                           {% csrf_token %}
-                       </form>
-                       
+                            <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
                         </ul>
                     </li>
 
@@ -140,7 +131,7 @@
     {% block footer %}
     <!--Start Footer -->
     <footer class="container-fluid bg-secondary text-center p-2 mt-5">
-      <small class="text-white">Copyright &copy; 2024 || Designed By Hamro Mart</small>
+      <small class="text-white">Copyright &copy; 2023 || Designed By Hamro Mart</small>
   <!--End Footer-->
     {% endblock footer %}
     

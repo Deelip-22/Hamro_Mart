@@ -32,6 +32,9 @@ class OrderedPlacedModelAdmin(admin.ModelAdmin):
         link=reverse("admin:app_product_change", args=[obj.product.pk])
         return format_html('<a href="{}">{}</a>',link,obj.product.title)
     
+# @admin.register(Wishlist)
+# class WishlistModelAdmin(admin.ModelAdmin):
+#    list_display=['id','user','product'] 
 
 @admin.register(Contact)
 class ContactModelAdmin(admin.ModelAdmin):
